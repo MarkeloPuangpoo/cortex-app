@@ -81,8 +81,8 @@ This isn't just a wrapper around an API. It orchestrates a complex dance between
 
 ### Running the App
 
+#### 🍎 macOS / 🐧 Linux
 **Backend (Brain):**
-
 ```bash
 cd backend
 python3 -m venv venv
@@ -91,7 +91,17 @@ pip install -r requirements.txt
 uvicorn main:app --reload
 ```
 
-**Frontend (Interface):**
+#### 🪟 Windows
+**Backend (Brain):**
+```powershell
+cd backend
+python -m venv venv
+.\venv\Scripts\activate
+pip install -r requirements.txt
+uvicorn main:app --reload
+```
+
+**Frontend (Interface) - All Platforms:**
 
 ```bash
 cd frontend
